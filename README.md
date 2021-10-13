@@ -8,17 +8,17 @@ This is building a container from scratch
 docker build --tag=hello-duke-cli-210 .
 
 #### [JMB] from demo:
-docker build --tag=app .
+`docker build --tag=app .`
 
 ### List docker images
-docker image ls
+`docker image ls`
 
 ### Run my newly built container
 
 docker run -it hello-duke-cli-210 python app.py --name "Big John"
 
 #### [JMB] from demo:
-docker run -t app python app.py --name "Julius Caesar"
+`docker run -t app python app.py --name "Julius Caesar"`
 
 ### Push to Docker Hub
 
