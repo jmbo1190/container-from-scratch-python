@@ -1,11 +1,14 @@
 # container-from-scratch-python
 This is building a container from scratch
 
-## Build the Container Yourself and Push to Docker Hub
+## Build the Container Yourself, Test-Run it locally, and Push to Docker Hub
 
 ### Build image
 *(If you want to develop yourself)* 
 docker build --tag=hello-duke-cli-210 .
+
+#### [JMB] from demo:
+docker build --tag=app .
 
 ### List docker images
 docker image ls
@@ -13,6 +16,9 @@ docker image ls
 ### Run my newly built container
 
 docker run -it hello-duke-cli-210 python app.py --name "Big John"
+
+#### [JMB] from demo:
+docker run -t app python app.py --name "Julius Caesar"
 
 ### Push to Docker Hub
 
