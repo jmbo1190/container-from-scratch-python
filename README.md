@@ -13,9 +13,9 @@ This is building a container from scratch
 `docker run -t app python app.py --name "Julius Caesar"`
 
 ### Push to Docker Hub
-`docker push jmbo1190/cloud-computing-foundations:container-from-scratch-python
+`docker push jmbo1190/cloud-computing-foundations:container-from-scratch-python`
 
-## Run it 
+## Open a shell in the container and run the CLI interactively
 
 ```bash
 docker pull jmbo1190/cloud-computing-foundations:container-from-scratch-python
@@ -23,8 +23,10 @@ docker run -it jmbo1190/cloud-computing-foundations:container-from-scratch-pytho
 
 #then run python app.py --help
 ```
+![Screen Shot](https://github.com/jmbo1190/container-from-scratch-python/blob/1122d4584d6fbb28d472659dd7a542b6c89827b2/container-from-scratch-python-run-CLI.png)
 
-## Pass in a command
+
+## Directly call the CLI within the container
 
 ```bash
 docker run -it jmbo1190/cloud-computing-foundations:container-from-scratch-python python app.py --name "Big John"
