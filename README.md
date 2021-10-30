@@ -4,32 +4,22 @@ This is building a container from scratch
 ## Build the Container Yourself, Test-Run it locally, and Push to Docker Hub
 
 ### Build image
-*(If you want to develop yourself)* 
-docker build --tag=hello-duke-cli-210 .
-
-#### [JMB] from demo:
 `docker build --tag=app .`
 
 ### List docker images
 `docker image ls`
 
 ### Run my newly built container
-
-docker run -it hello-duke-cli-210 python app.py --name "Big John"
-
-#### [JMB] from demo:
 `docker run -t app python app.py --name "Julius Caesar"`
 
 ### Push to Docker Hub
+`docker push jmbo1190/cloud-computing-foundations:container-from-scratch-python
 
-*Note:  You will need to change for your Docker Hub Repo*
-docker push noahgift/duke102:tagname
-
-## Run it yourself
+## Run it 
 
 ```bash
-docker pull noahgift/cloudapp:latest
-docker run -it noahgift/cloudapp bash 
+docker pull jmbo1190/cloud-computing-foundations:container-from-scratch-python
+docker run -it jmbo1190/cloud-computing-foundations:container-from-scratch-python bash 
 
 #then run python app.py --help
 ```
@@ -37,7 +27,7 @@ docker run -it noahgift/cloudapp bash
 ## Pass in a command
 
 ```bash
-docker run -it noahgift/cloudapp python app.py --name "Big John"
+docker run -it jmbo1190/cloud-computing-foundations:container-from-scratch-python python app.py --name "Big John"
 #the output
 Hello Big John!
 ```
