@@ -1,3 +1,5 @@
+[![Python application test with Github Actions](https://github.com/jmbo1190/container-from-scratch-python/actions/workflows/main.yml/badge.svg)](https://github.com/jmbo1190/container-from-scratch-python/actions/workflows/main.yml)
+
 # container-from-scratch-python
 This is building a container from scratch
 
